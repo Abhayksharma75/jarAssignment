@@ -22,7 +22,7 @@ class JarViewModel : ViewModel() {
         viewModelScope.launch {
             repository.fetchResults().collect{items ->
                 _listStringData.value = items
-                
+
             }
         }
     }
